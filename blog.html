@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Food Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-container">
+        <nav>
+            <div class="logo"><h2>Food Blog</h2></div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="contact.html">Contact</a>
+                <input type="text" id="searchInput" placeholder="Search posts...">
+            </div>
+        </nav>
+    </div>
+
+    <section class="site-container">
+        <h1>Latest Blog Posts</h1>
+        <div class="blog" id="blogList">
+            <div class="blog-post">
+                <div class="thumbnail">
+                    <img src="images/vegan.jpg" alt="Vegan Dish">
+                </div>
+                <div class="blog-content">
+                    <h3><a href="blog-posts/vegan-recipes.html">5 Vegan Recipes to Try This Spring</a></h3>
+                    <span>Vegan - 20.04.2025</span>
+                    <p>Discover easy, healthy vegan meals that bring flavor and nutrition to your table.</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="thumbnail">
+                    <img src="images/smoothie.jpg" alt="Smoothie">
+                </div>
+                <div class="blog-content">
+                    <h3><a href="blog-posts/smoothie-energy.html">Top 3 Smoothies for Daily Energy Boost</a></h3>
+                    <span>Drinks - 18.04.2025</span>
+                    <p>These quick and nutritious smoothies will power your day from morning to night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="site-container" style="margin-top: 50px;">
+        <div class="unique-ad" style="background-color:#fff4cc; border:2px dashed #ff9800; padding:20px; text-align:center;">
+            <h3>🍽️ Special Offer Just for You!</h3>
+            <p>Subscribe today and get a FREE eBook with 50 exclusive healthy recipes!</p>
+            <button style="padding:10px 20px; background:#ff9800; border:none; color:white; font-weight:bold; cursor:pointer; border-radius:5px;">Subscribe Now</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="site-container">
+            <p>&copy; 2025 Food Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const blogList = document.getElementById('blogList');
+
+        if (searchInput && blogList) {
+            searchInput.addEventListener('input', () => {
+                const filter = searchInput.value.toLowerCase();
+                const posts = blogList.getElementsByClassName('blog-post');
+                for (let post of posts) {
+                    const title = post.querySelector('h3').innerText.toLowerCase();
+                    const paragraph = post.querySelector('p').innerText.toLowerCase();
+                    if (title.includes(filter) || paragraph.includes(filter)) {
+                        post.style.display = '';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
