@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Food Blog</title>
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
+    <style>
+        .site-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;}
+    </style>
 </head>
 <body>
     <div class="site-container">
         <nav>
             <div class="logo"><h2>Food Blog</h2></div>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="blog.html" class="active">Blog</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" class="am">Home</a>
+                <a href="about.html" class="am">About</a>
+                <a href="blog.html" class="am">Blog</a>
+                <a href="contact.html" class="am">Contact</a>
+            </div>
                 <input type="text" id="searchInput" placeholder="Search posts...">
             </div>
         </nav>
@@ -24,23 +31,35 @@
         <h1>Latest Blog Posts</h1>
         <div class="blog" id="blogList">
             <div class="blog-post">
-                <div class="thumbnail">
-                    <img src="images/vegan.jpg" alt="Vegan Dish">
+                <div class="thumbnailb">
+                    <img src="images/a1.jpg" alt="Chipotle Chicken with Chunky Pistachio Sauce">
                 </div>
                 <div class="blog-content">
-                    <h3><a href="blog-posts/vegan-recipes.html">5 Vegan Recipes to Try This Spring</a></h3>
-                    <span>Vegan - 20.04.2025</span>
-                    <p>Discover easy, healthy vegan meals that bring flavor and nutrition to your table.</p>
+                    <h3><a href="https://pinchofyum.com/chipotle-chicken-with-chunky-pistachio-sauce">Chipotle Chicken with Chunky Pistachio Sauce</a></h3>
+                    <span>April 22, 2025</span>
+                    <p>Smoky chipotle chicken grilled to perfection, with a chunky fun sauce featuring pistachios, avocado, lemon, and chives! This is so good!</p>
                 </div>
             </div>
+
             <div class="blog-post">
-                <div class="thumbnail">
-                    <img src="images/smoothie.jpg" alt="Smoothie">
+                <div class="thumbnailb">
+                    <img src="images/a2.jpg" alt="Sheet Pan Salmon with Dill Potatoes">
                 </div>
                 <div class="blog-content">
-                    <h3><a href="blog-posts/smoothie-energy.html">Top 3 Smoothies for Daily Energy Boost</a></h3>
-                    <span>Drinks - 18.04.2025</span>
-                    <p>These quick and nutritious smoothies will power your day from morning to night.</p>
+                    <h3><a href="https://pinchofyum.com/sheet-pan-salmon-with-dill-potatoes">Sheet Pan Salmon with Dill Potatoes</a></h3>
+                    <span>April 15, 2025</span>
+                    <p>Simple and delicious salmon and potatoes roasted on a sheet pan, and covered in a garlic dill butter sauce! One of my family’s favorite dinners.</p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="thumbnailb">
+                    <img src="images/a3.jpg" alt="The Best Carrot Cake Cupcakes with Cream Cheese Frosting">
+                </div>
+                <div class="blog-content">
+                    <h3><a href="https://pinchofyum.com/best-carrot-cake-cupcakes-with-cream-cheese-frosting">The Best Carrot Cake Cupcakes with Cream Cheese Frosting</a></h3>
+                    <span>April 9, 2025</span>
+                    <p>These Carrot Cake Cupcakes are the BEST! Fluffy and plush with a generous layer of cream cheese frosting all over top.</p>
                 </div>
             </div>
         </div>
@@ -56,7 +75,8 @@
 
     <footer>
         <div class="site-container">
-            <p>&copy; 2025 Food Blog. All rights reserved.</p>
+            <div class="footer-bottom", style="padding-left: 460px">
+                <p>&copy; 2025 Food Blog. All rights reserved.</p>
         </div>
     </footer>
 

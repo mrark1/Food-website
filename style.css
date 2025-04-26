@@ -24,7 +24,10 @@
     background-color: rgb(243, 137, 9);    
 } 
 */
-
+.thumbnailb{
+    width: 80px;
+    height: 80px;
+}
 .thumbnail{
     width: 30%;
     height: 30%;
@@ -188,8 +191,8 @@ nav .menu a{
 }
 .hero .content-box{
     position: absolute;
-    background-color: #fffffc;
-    padding: 32px;
+    background-color: #f8f8f5;
+   padding: 32px;
     width: 48%;
     top: 50%;
     left: 65%;
@@ -204,7 +207,7 @@ nav .menu a{
         left: 50%;
         transform: translate(-50%,-50%);
         width: 80%;
-        background-color: #fffffc;
+        background-color: #e9e9d0;
     }
 }
 main{
