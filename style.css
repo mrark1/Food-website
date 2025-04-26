@@ -17,13 +17,29 @@
     height: 80%;
     width: 70%;
     background-color: rgb(196, 233, 255);
-} */
-/* .menu{
+} 
+.menu{
     height: 100%;
     width: 100%;
     background-color: rgb(243, 137, 9);    
-} */
+} 
+*/
 
+.thumbnail{
+    width: 30%;
+    height: 30%;
+}
+.menu{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(155, 237, 243);
+    padding-left: 60px;
+}
+.am{
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
 :root{
     --primary-color:#202020;
     --secondary-color:#f4f7fc;
@@ -41,7 +57,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    font-family: 'mulish',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h1,h2,h3{
     font-size: 'Playfair Display',serif;
@@ -260,15 +276,15 @@ main{
 }
 /* footer */
 footer{
-    background-color: #212124;
+    background-color: grey;
     margin-top: 100px;
     padding: 100px 0;
 }
 footer h3{
-    color: #fffffc;
+    color: black;
 }
 footer p,span,a{
-    color: #9b9ca1;
+    color:black;
 }
 .footer-top{
     display: grid;
@@ -291,7 +307,7 @@ footer hr{
     margin-right:16px;
 }
 .social-icons i{
-    margin-top: 10px;
+    margin-top: 20px;
     color: var(--secondary-color);
     font-size: 16px;
     border: 1px solid rgb(243, 169, 150);
@@ -305,7 +321,16 @@ footer hr{
         justify-items:start;
     }   
 }
-
+.center{
+    text-decoration-line: underline;
+    text-decoration-color: #2fe7de;
+    font-weight: bolder ;
+}
+.right{
+    text-align: center;
+    font-size: 30px;
+    
+}
 /* search */
 #searchInput {
     padding: 8px 12px;
@@ -323,6 +348,59 @@ footer hr{
     }
 }
 
+
+/* social icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center;      /* Centers the icons vertically */
+    gap: 40px;             /* Adds some space between the icons */
+    padding: 50px;           /* Adds padding around the icons */
+}
+.social-icon {
+    width: 40px;          /* Adjust as needed */
+    height: 40px;         /* Adjust as needed */
+    border-radius: 50%;    /* Makes the icon round */
+   /* background-color: #800080; /* Placeholder purple color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(243, 237, 237);           /* Placeholder white color for the icon itself */
+    font-size: 33px;         /* Adjust as needed */
+    text-decoration: none;  /*Removes the underline*/
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+.social-icon:hover {
+    background-color: #9932cc;  /* Darker purple on hover */
+}
+.social-icon.instagram {
+    background: linear-gradient(to bottom, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.social-icon.instagram:hover {
+     background: linear-gradient(to bottom, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.social-icon.facebook {
+    background-color: darkblue;
+}
+
+.social-icon.facebook:hover {
+    background-color: skyblue;
+}
+
+.social-icon.x {
+    background-color: skyblue;
+}
+.social-icon.x:hover {
+    background-color:darkblue;
+}
+.social-icon.youtube {
+    background-color: #0518c2;
+}
+.social-icon.youtube:hover {
+    background-color: red;
+}
 
 
 
