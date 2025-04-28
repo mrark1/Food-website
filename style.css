@@ -32,6 +32,9 @@
     width: 30%;
     height: 30%;
 }
+.thumbnail img{
+    border-radius: 50px;
+}
 .menu{
     height: 100%;
     width: 80%;
@@ -46,6 +49,7 @@
 }
 .am:hover{
     transform: scale(1.5);
+    color: rgb(15, 15, 217);
 }
 :root{
     --primary-color:#202020;
@@ -150,7 +154,7 @@ nav .menu a{
     border-bottom: none;
     color: var(--primary-color);
     font-weight: 700;
-    margin-left: 24px;
+    margin-left: 50px;
 }
 .mobile-menu{
     display: none;
@@ -183,7 +187,7 @@ nav .menu a{
     grid-template-columns: 2fr 1.45fr;
 }
 .hero .left{
-    background-image: url(images/img1.jpg);
+    background-image: url(images/banner.jpg);
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
@@ -230,6 +234,7 @@ main{
     background-color: var(--secondary-color);
     margin: 24px 0;
     padding: 16px;
+    border-radius: 5px;
 }
 .blog-content{
     margin-top: 24px;
@@ -381,12 +386,15 @@ footer hr{
 
 .social-icon:hover {
     background-color: #9932cc;  /* Darker purple on hover */
+    transform: scale(1.2);
 }
 .social-icon.instagram {
     background: linear-gradient(to bottom, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    
 }
 .social-icon.instagram:hover {
      background: linear-gradient(to bottom, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+     transform: scale(1.2);
 }
 .social-icon.facebook {
     background-color: darkblue;
@@ -394,6 +402,7 @@ footer hr{
 
 .social-icon.facebook:hover {
     background-color: skyblue;
+    transform: scale(1.2);
 }
 
 .social-icon.x {
@@ -401,34 +410,20 @@ footer hr{
 }
 .social-icon.x:hover {
     background-color:darkblue;
+    transform: scale(1.2);
 }
 .social-icon.youtube {
     background-color: #0518c2;
 }
 .social-icon.youtube:hover {
     background-color: red;
+    transform: scale(1.2);
 }
 
 #logo{
     text-decoration: none;
-    animation: hover_zoom 0.3s;
-    font-size: 30px;
 }
-@keyframes hover_zoom {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
-}
-#logo:hover{
-    animation: hover_zoom 0.3s ease-in-out;
-}
-
-
-
-
+    
 
 
 
