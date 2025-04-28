@@ -42,6 +42,10 @@
     font-size: large;
     text-decoration: underline;
     text-decoration-color: darkblue;
+    transition: transform 0.3s;
+}
+.am:hover{
+    transform: scale(1.5);
 }
 :root{
     --primary-color:#202020;
@@ -404,6 +408,24 @@ footer hr{
 .social-icon.youtube:hover {
     background-color: red;
 }
+
+#logo{
+    text-decoration: none;
+    animation: hover_zoom 0.3s;
+    font-size: 30px;
+}
+@keyframes hover_zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+#logo:hover{
+    animation: hover_zoom 0.3s ease-in-out;
+}
+
 
 
 
